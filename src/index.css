@@ -1,68 +1,57 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* === 🌍 Estilos globales para toda la app React === */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* 🧵 Fuente base y fondo general: limpio, suave y legible */
 body {
+  font-family: sans-serif;         /* Tipografía sencilla y clara para todos los textos */
+  background-color: #f2f2f2;       /* Gris claro que da sensación de calma y orden */
+  color: #222;                     /* Texto oscuro para buena legibilidad */
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* 🔗 Estilos para enlaces: visualmente coherentes con el estilo institucional */
+a {
+  color: #008037;                  /* Verde SENA para mantener identidad visual */
+  text-decoration: none;          /* Sin subrayado por defecto para un look más limpio */
 }
 
+a:hover {
+  text-decoration: underline;     /* Subrayado al pasar el mouse para indicar que es clickeable */
+}
+
+/* 🟩 Botones genéricos: accesibles, amigables y con buen contraste */
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #008037;      /* Verde institucional */
+  color: white;                   /* Texto claro sobre fondo oscuro */
+  border: none;
+  border-radius: 6px;             /* Bordes redondeados para un toque más suave */
+  padding: 8px 14px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 14px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button,
+a {
+  transition: all 0.3s ease;
 }
+
+button:hover {
+  background-color: #006b2f;      /* Verde más oscuro para indicar interacción */
+}
+
+/* 🖼️ Imágenes que se adaptan al espacio disponible */
+img {
+  max-width: 100%;                /* Nunca se salen del contenedor */
+  height: auto;                   /* Mantienen proporción sin deformarse */
+}
+
+/* 🧭 Centramos el contenido principal de la app */
+#root {
+  display: flex;
+  justify-content: center;        /* Lo alineamos horizontalmente al centro */
+  align-items: flex-start;        /* Comienza desde arriba, como una app vertical */
+  min-height: 100vh;              /* Ocupa toda la altura de la pantalla */
+}
+
+
+

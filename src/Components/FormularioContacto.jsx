@@ -43,6 +43,12 @@ export default function FormularioContacto({ onAgregar }) {
         placeholder="Correo"
       />
       <input
+        name="empresa"
+        value={form.empresa}
+        onChange={onChange}
+        placeholder="Empresa"
+      />
+      <input
         name="etiqueta"
         value={form.etiqueta}
         onChange={onChange}

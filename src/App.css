@@ -29,11 +29,15 @@ body {
 .btn-agregar {
   background: var(--morado);
   color: white;
+  display: flow-root;
+  flex-direction: row;
 }
 
 .btn-eliminar {
   background: #dc2626;
   color: white;
+  display: flow-root;
+  flex-direction: row;
 }
 
 

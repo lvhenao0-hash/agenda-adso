@@ -1,57 +1,9 @@
-/* === 🌍 Estilos globales para toda la app React === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* 🧵 Fuente base y fondo general: limpio, suave y legible */
-body {
-  font-family: sans-serif;         /* Tipografía sencilla y clara para todos los textos */
-  background-color: #f2f2f2;       /* Gris claro que da sensación de calma y orden */
-  color: #222;                     /* Texto oscuro para buena legibilidad */
-  margin: 0;
-  padding: 0;
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-800 font-sans;
+  }
 }
-
-/* 🔗 Estilos para enlaces: visualmente coherentes con el estilo institucional */
-a {
-  color: #008037;                  /* Verde SENA para mantener identidad visual */
-  text-decoration: none;          /* Sin subrayado por defecto para un look más limpio */
-}
-
-a:hover {
-  text-decoration: underline;     /* Subrayado al pasar el mouse para indicar que es clickeable */
-}
-
-/* 🟩 Botones genéricos: accesibles, amigables y con buen contraste */
-button {
-  background-color: #008037;      /* Verde institucional */
-  color: white;                   /* Texto claro sobre fondo oscuro */
-  border: none;
-  border-radius: 6px;             /* Bordes redondeados para un toque más suave */
-  padding: 8px 14px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-button,
-a {
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #006b2f;      /* Verde más oscuro para indicar interacción */
-}
-
-/* 🖼️ Imágenes que se adaptan al espacio disponible */
-img {
-  max-width: 100%;                /* Nunca se salen del contenedor */
-  height: auto;                   /* Mantienen proporción sin deformarse */
-}
-
-/* 🧭 Centramos el contenido principal de la app */
-#root {
-  display: flex;
-  justify-content: center;        /* Lo alineamos horizontalmente al centro */
-  align-items: flex-start;        /* Comienza desde arriba, como una app vertical */
-  min-height: 100vh;              /* Ocupa toda la altura de la pantalla */
-}
-
-
-

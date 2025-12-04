@@ -1,5 +1,9 @@
 // Importamos la URL base desde config.js
+<<<<<<< HEAD
 import { API_BASE_URL } from "./config";
+=======
+import { API_BASE_URL } from "./config.js";
+>>>>>>> 7051b573d1f505ad547f9d32048791881da26031
 
 // Función GET: listar contactos
 export async function listarContactos() {
@@ -41,4 +45,7 @@ export async function eliminarContactoPorId(id) {
   return true;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7051b573d1f505ad547f9d32048791881da26031
